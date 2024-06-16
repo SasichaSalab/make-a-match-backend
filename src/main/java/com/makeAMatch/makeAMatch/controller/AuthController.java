@@ -25,4 +25,9 @@ public class AuthController {
     public ResponseEntity<ReqRes> refreshToken(@RequestBody ReqRes refreshTokenRequest){
         return ResponseEntity.ok(authService.refreshToken(refreshTokenRequest));
     }
+
+    @GetMapping("/check")
+    public ResponseEntity<String> check(){
+        return ResponseEntity.ok("ok");
+    }
 }
