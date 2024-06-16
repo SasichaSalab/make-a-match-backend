@@ -29,6 +29,10 @@ public class CartController {
     @Autowired
     private RefundService refundService;
 
+    @GetMapping("/")
+    public ResponseEntity<String> check() {
+        return ResponseEntity.status(HttpStatus.FOUND).body("access ");
+    }
     @PostMapping("/user/add-to-cart")
     public ResponseEntity<Cart> addToCart(@RequestBody DetailIdDTO detailIdDTO, @RequestHeader(value="Authorization") String authHeader){
         Cart cart = new Cart();
