@@ -16,6 +16,7 @@ spring:
       database: mysql
       database-platform: org.hibernate.dialect.MySQL8Dialect
 server:
+  port: 8080
   tomcat:
     max-http-response-header-size: 8KB
   max-http-request-header-size: 8KB
