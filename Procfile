@@ -1,0 +1,1 @@
+web: java -jar target/makeAMatch-Backend-0.0.1-SNAPSHOT.jar
