@@ -51,6 +51,7 @@ public class SecurityConfig {
         // Http request filter
         httpSecurity.authorizeHttpRequests(
                 requestMatcher -> requestMatcher.requestMatchers("/auth/**").permitAll()
+                        .requestMatchers("/**").permitAll()
                         .requestMatchers("/admin/**").hasAnyAuthority("ADMIN")
                         .requestMatchers("/user/**").hasAnyAuthority("USER")
                         .requestMatchers("/product/**").hasAnyAuthority("USER", "ADMIN")
