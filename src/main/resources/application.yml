@@ -4,9 +4,9 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
   datasource:
-    url: jdbc:mysql://localhost:3306/makeamatch
-    username: root
-    password:
+    url: jdbc:mysql://uqpij1bf2x5qcdfk:umu6b5fj2zc4oels@gk90usy5ik2otcvi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/iqwppo8yye2ntzi4
+    username: uqpij1bf2x5qcdfk
+    password: umu6b5fj2zc4oels
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
